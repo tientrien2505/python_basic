@@ -13,7 +13,6 @@ print(type(a))
 for i, value in enumerate(a):
     print(i, value)
 
-
 # toan tu so hoc
 print('# toan tu so hoc')
 a = 123
@@ -66,6 +65,7 @@ while count < 10:
     count += 1
 
 # function
+
 print('# function')
 def name_function(param1, param2):
     print(param1, param2)
@@ -84,7 +84,7 @@ print('plus(1, 2): ', plus(2, 1))
 print('plus(b = 2, a = 1): ', plus(b = 2, a = 1))
 
 def foo(f):
-    return sum(1, 2)
+    return f(1, 2)
 print('function have param is fuction: ', foo(sum))
 
 print('type of function: ', type(foo))
@@ -112,12 +112,40 @@ func('chien', 'truong', hue = 'yen loi', chieu = 'yen dong')
 print('# string processing')
 str1 = 'Hello'
 str2 = 'World'
+str3 = list()
+str3.append(str1)
+str3.append(str2)
+print(str3)
 paragraph = """this is line 1
 this is line 2
 this is line 3"""
 print(paragraph)
 subStr = paragraph[::-1]
 print('this is subString: ', subStr, paragraph)
-print(paragraph.split(sep = ' ', maxsplit=1)
+print(paragraph.split(sep = ' ', maxsplit=1))
 # some functions process string
 # find, replace, strip, split, splitlines, isnumeric, lower, upper
+print(len('hello'))
+print('vi tri \'l\' trong  \'hello\' tu phai qua trai', str1.rfind('l'))
+print(' '.join(str3))
+# List
+numbers = [1, 2, 3]
+names = ['Chien', 'Truong']
+print(names[-1])
+print(len(names))
+
+print('Chien' in names)
+print(1 >> 2)
+
+s = str1.replace('l', 'n', 1)
+list.append(names, 'Hue')
+print(s)
+print(names)
+
+# del names[0]
+print(names)
+print(numbers + names)
+def functonForName(e):
+    return len(e)
+list.sort(names, key=lambda name : len(name), reverse=True)
+print(names)
