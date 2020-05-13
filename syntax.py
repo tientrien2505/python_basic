@@ -51,3 +51,10 @@ for index, value in enumerate(fruits):
 print('print from 0 to 9:')
 for i in range(10):
     print('ith: ', i)
+
+# While
+count = 0
+while count < 10:
+    print('count is: ', count)
+    count += 1
+
