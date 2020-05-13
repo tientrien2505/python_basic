@@ -108,3 +108,16 @@ def func(*names, **addresses):
         print(item)
 func('chien', 'truong', hue = 'yen loi', chieu = 'yen dong')
 
+# string processing
+print('# string processing')
+str1 = 'Hello'
+str2 = 'World'
+paragraph = """this is line 1
+this is line 2
+this is line 3"""
+print(paragraph)
+subStr = paragraph[::-1]
+print('this is subString: ', subStr, paragraph)
+print(paragraph.split(sep = ' ', maxsplit=1)
+# some functions process string
+# find, replace, strip, split, splitlines, isnumeric, lower, upper
