@@ -29,4 +29,11 @@ print('2 > a < 4? ', 2 > a < 4)
 print('2 >= a > 3? ', 2 > a > 3)
 print('not (2 >= a or a > 3)? ', not(2 >= a or a > 3))
 
+# cau truc dieu kien
 
+if a > 2:
+    print('a > 2')
+elif a < 2:
+    print('a < 2')
+else:
+    print('a == 2')
