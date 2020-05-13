@@ -37,3 +37,17 @@ elif a < 2:
     print('a < 2')
 else:
     print('a == 2')
+
+# khong co cau truc switch case
+
+# for .. in ..
+for letter in "hello world":
+    print('current letter: ', letter)
+fruits = ['banana', 'apple', 'orange']
+for fruit in fruits:
+    print('current fruit: ', fruit)
+for index, value in enumerate(fruits):
+    print('ith, value: ', index, value)
+print('print from 0 to 9:')
+for i in range(10):
+    print('ith: ', i)
